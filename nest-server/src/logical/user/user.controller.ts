@@ -1,6 +1,17 @@
-import { Controller, Get, Param, Req, Body, Query, Post } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Param,
+  Req,
+  Body,
+  Query,
+  Post,
+  UseGuards,
+} from '@nestjs/common';
 import { UserService } from './user.service';
 import { AuthService } from '../auth/auth.service';
+import { AuthGuard } from '@nestjs/passport';
+import { CurrentUser } from '../auth/current-user.decorator';
 
 @Controller('user')
 export class UserController {
@@ -42,5 +53,18 @@ export class UserController {
           msg: '查无此人',
         };
     }
+  }
+
+  @Post('userinfo')
+  @UseGuards(AuthGuard('jwt'))
+  async userInfo(@Body() body) {
+    const { accountName } = body;
+    return await this.userService.findOne(accountName);
+  }
+
+  @Post('userinfo2')
+  @UseGuards(AuthGuard('jwt'))
+  async userInfo2(@CurrentUser() user) {
+    return user;
   }
 }
