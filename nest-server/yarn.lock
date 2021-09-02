@@ -955,6 +955,15 @@
     "@types/jsonwebtoken" "*"
     "@types/passport-strategy" "*"
 
+"@types/passport-local@^1.0.34":
+  version "1.0.34"
+  resolved "https://registry.nlark.com/@types/passport-local/download/@types/passport-local-1.0.34.tgz?cache=0&sync_timestamp=1629709260458&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fpassport-local%2Fdownload%2F%40types%2Fpassport-local-1.0.34.tgz#84d3b35b2fd4d36295039ded17fe5f3eaa62f4f6"
+  integrity sha1-hNOzWy/U02KVA53tF/5fPqpi9PY=
+  dependencies:
+    "@types/express" "*"
+    "@types/passport" "*"
+    "@types/passport-strategy" "*"
+
 "@types/passport-strategy@*":
   version "0.2.35"
   resolved "https://registry.nlark.com/@types/passport-strategy/download/@types/passport-strategy-0.2.35.tgz?cache=0&sync_timestamp=1629709260359&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fpassport-strategy%2Fdownload%2F%40types%2Fpassport-strategy-0.2.35.tgz#e52f5212279ea73f02d9b06af67efe9cefce2d0c"
