@@ -858,7 +858,7 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@^4.17.13":
+"@types/express@*", "@types/express@^4.17.13":
   version "4.17.13"
   resolved "https://registry.nlark.com/@types/express/download/@types/express-4.17.13.tgz?cache=0&sync_timestamp=1629707737380&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fexpress%2Fdownload%2F%40types%2Fexpress-4.17.13.tgz#a76e2995728999bab51a33fabce1d705a3709034"
   integrity sha1-p24plXKJmbq1GjP6vOHXBaNwkDQ=
@@ -912,6 +912,13 @@
   resolved "https://registry.nlark.com/@types/json5/download/@types/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/jsonwebtoken@*":
+  version "8.5.5"
+  resolved "https://registry.nlark.com/@types/jsonwebtoken/download/@types/jsonwebtoken-8.5.5.tgz?cache=0&sync_timestamp=1629708116406&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fjsonwebtoken%2Fdownload%2F%40types%2Fjsonwebtoken-8.5.5.tgz#da5f2f4baee88f052ef3e4db4c1a0afb46cff22c"
+  integrity sha1-2l8vS67ojwUu8+TbTBoK+0bP8iw=
+  dependencies:
+    "@types/node" "*"
+
 "@types/jsonwebtoken@8.5.4":
   version "8.5.4"
   resolved "https://registry.nlark.com/@types/jsonwebtoken/download/@types/jsonwebtoken-8.5.4.tgz?cache=0&sync_timestamp=1629708116406&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fjsonwebtoken%2Fdownload%2F%40types%2Fjsonwebtoken-8.5.4.tgz#50ccaf0aa6f5d7b9956e70fe323b76e582991913"
@@ -938,6 +945,30 @@
   version "4.0.0"
   resolved "https://registry.nlark.com/@types/parse-json/download/@types/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
+
+"@types/passport-jwt@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.nlark.com/@types/passport-jwt/download/@types/passport-jwt-3.0.6.tgz?cache=0&sync_timestamp=1629709259880&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fpassport-jwt%2Fdownload%2F%40types%2Fpassport-jwt-3.0.6.tgz#41cc8b5803d5f5f06eb33e19c453b42716def4f1"
+  integrity sha1-QcyLWAPV9fBusz4ZxFO0Jxbe9PE=
+  dependencies:
+    "@types/express" "*"
+    "@types/jsonwebtoken" "*"
+    "@types/passport-strategy" "*"
+
+"@types/passport-strategy@*":
+  version "0.2.35"
+  resolved "https://registry.nlark.com/@types/passport-strategy/download/@types/passport-strategy-0.2.35.tgz?cache=0&sync_timestamp=1629709260359&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fpassport-strategy%2Fdownload%2F%40types%2Fpassport-strategy-0.2.35.tgz#e52f5212279ea73f02d9b06af67efe9cefce2d0c"
+  integrity sha1-5S9SEieepz8C2bBq9n7+nO/OLQw=
+  dependencies:
+    "@types/express" "*"
+    "@types/passport" "*"
+
+"@types/passport@*":
+  version "1.0.7"
+  resolved "https://registry.nlark.com/@types/passport/download/@types/passport-1.0.7.tgz?cache=0&sync_timestamp=1629709260097&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fpassport%2Fdownload%2F%40types%2Fpassport-1.0.7.tgz#85892f14932168158c86aecafd06b12f5439467a"
+  integrity sha1-hYkvFJMhaBWMhq7K/QaxL1Q5Rno=
+  dependencies:
+    "@types/express" "*"
 
 "@types/prettier@^2.1.5":
   version "2.3.2"
