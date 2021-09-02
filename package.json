@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "mysql2": "^2.3.0",
-    "sequelize": "^6.6.5",
-    "sequelize-typescript": "^2.1.0"
-  }
-}
