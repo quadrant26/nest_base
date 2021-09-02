@@ -7,8 +7,8 @@ export class UserService {
   async findOne(username: string): Promise<any | undefined> {
     const sql = `
       SELECT 
-        user_id id real_name realName, role
-      From
+        user_id id, real_name realName, role
+      FROM
         admin_user
       WHERE
         account_name = '${username}'
