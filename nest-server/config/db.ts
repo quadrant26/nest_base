@@ -2,8 +2,8 @@
 
 const localConfig = {
   mysql: {
-    port: '3306',
-    host: 'locahost',
+    port: 3306,
+    host: 'localhost',
     user: 'root',
     password: '123456',
     database: 'nest_zero_to_one',
@@ -13,8 +13,8 @@ const localConfig = {
 
 const productConfig = {
   mysql: {
-    port: '3306',
-    host: 'locahost',
+    port: 3306,
+    host: 'localhost',
     user: 'root',
     password: '123456',
     database: 'nest_zero_to_one',
