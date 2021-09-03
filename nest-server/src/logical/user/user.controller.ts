@@ -7,11 +7,14 @@ import {
   Query,
   Post,
   UseGuards,
+  UsePipes,
 } from '@nestjs/common';
 import { UserService } from './user.service';
 import { AuthService } from '../auth/auth.service';
 import { AuthGuard } from '@nestjs/passport';
 import { CurrentUser } from '../auth/current-user.decorator';
+import { CurrentBodyDto } from './user.dto';
+import { ValidationPipe } from '../../pipe/validation.pipe';
 
 @Controller('user')
 export class UserController {
@@ -66,5 +69,12 @@ export class UserController {
   @UseGuards(AuthGuard('jwt'))
   async userInfo2(@CurrentUser() user) {
     return user;
+  }
+
+  @Post('register2')
+  @UsePipes(new ValidationPipe()) // 使用管道验证
+  async register2(@Body() body: CurrentBodyDto) {
+    // 指定 dto 类型
+    return await this.userService.register(body);
   }
 }
