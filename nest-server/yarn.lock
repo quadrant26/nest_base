@@ -5161,7 +5161,7 @@ tsconfig-paths@3.10.1:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tsconfig-paths@^3.10.1, tsconfig-paths@^3.9.0:
+tsconfig-paths@^3.11.0, tsconfig-paths@^3.9.0:
   version "3.11.0"
   resolved "https://registry.nlark.com/tsconfig-paths/download/tsconfig-paths-3.11.0.tgz?cache=0&sync_timestamp=1629839877158&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftsconfig-paths%2Fdownload%2Ftsconfig-paths-3.11.0.tgz#954c1fe973da6339c78e06b03ce2e48810b65f36"
   integrity sha1-lUwf6XPaYznHjgawPOLkiBC2XzY=
